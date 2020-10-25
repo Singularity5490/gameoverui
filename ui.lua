@@ -9,125 +9,117 @@ local library = {
 	}
 }
 
-local cg = game:GetService("CoreGui")
-local gameoverui = cg:FindFirstChild("gameoverui")
-if gameoverui then gameoverui:Destroy()end
+do local obj = game:GetService('CoreGui'):FindFirstChild('gameover') if obj then obj:Destroy() end end
 
-local gameoverui = Instance.new("ScreenGui")
+local gameover = Instance.new("ScreenGui")
 local prefabs = Instance.new("Frame")
-local tabbutton = Instance.new("TextButton")
-local UIGradient = Instance.new("UIGradient")
 local subtabbutton = Instance.new("ImageButton")
 local icon = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local tabbutton = Instance.new("TextButton")
 local UIGradient_2 = Instance.new("UIGradient")
-local label = Instance.new("Frame")
-local label_2 = Instance.new("TextLabel")
+local keybind = Instance.new("ImageButton")
+local title = Instance.new("TextLabel")
+local back = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
 local UIGradient_3 = Instance.new("UIGradient")
-local stab_tab = Instance.new("Frame")
-local list = Instance.new("UIListLayout")
-local main = Instance.new("ImageLabel")
-local barup = Instance.new("ImageLabel")
-local title1 = Instance.new("TextLabel")
-local UIGradient_4 = Instance.new("UIGradient")
-local title2 = Instance.new("TextLabel")
-local UIGradient_5 = Instance.new("UIGradient")
-local bardown = Instance.new("ImageLabel")
-local mtabholder = Instance.new("Frame")
-local list_2 = Instance.new("UIListLayout")
-local stabholder = Instance.new("Frame")
-local tabs = Instance.new("Frame")
-local tab = Instance.new("Frame")
-local mainholder1 = Instance.new("Frame")
-local UIListLayout = Instance.new("UIListLayout")
-local mainholder2 = Instance.new("Frame")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local circle = Instance.new("ImageLabel")
 local slider = Instance.new("ImageButton")
 local button = Instance.new("TextButton")
 local line = Instance.new("ImageLabel")
 local fill = Instance.new("ImageLabel")
-local UIGradient_6 = Instance.new("UIGradient")
-local circle_2 = Instance.new("ImageLabel")
-local UIGradient_7 = Instance.new("UIGradient")
-local title = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local circle = Instance.new("ImageLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local title_2 = Instance.new("TextLabel")
 local val = Instance.new("TextLabel")
 local textbox = Instance.new("ImageButton")
 local TextBox = Instance.new("TextBox")
-local title_2 = Instance.new("TextLabel")
+local title_3 = Instance.new("TextLabel")
 local toggle = Instance.new("ImageButton")
 local button_2 = Instance.new("TextButton")
-local back = Instance.new("ImageLabel")
-local fill_2 = Instance.new("ImageLabel")
-local UIGradient_8 = Instance.new("UIGradient")
-local title_3 = Instance.new("TextLabel")
-local keybind = Instance.new("ImageButton")
-local title_4 = Instance.new("TextLabel")
 local back_2 = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
-local UIGradient_9 = Instance.new("UIGradient")
+local fill_2 = Instance.new("ImageLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local title_4 = Instance.new("TextLabel")
+local label = Instance.new("Frame")
+local label_2 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
 local button_3 = Instance.new("ImageButton")
 local title_5 = Instance.new("TextLabel")
+local color = Instance.new("ImageLabel")
+local button_4 = Instance.new("TextButton")
+local back_3 = Instance.new("ImageLabel")
+local fill_3 = Instance.new("ImageLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local title_6 = Instance.new("TextLabel")
 local dropdown = Instance.new("ImageButton")
 local dropframe = Instance.new("ImageButton")
 local dropscroll = Instance.new("ScrollingFrame")
-local list_3 = Instance.new("UIListLayout")
-local title_6 = Instance.new("TextLabel")
-local button_4 = Instance.new("TextButton")
+local list = Instance.new("UIListLayout")
+local title_7 = Instance.new("TextLabel")
+local button_5 = Instance.new("TextButton")
 local selected = Instance.new("ImageLabel")
 local icon_2 = Instance.new("ImageButton")
-local UIGradient_10 = Instance.new("UIGradient")
+local UIGradient_9 = Instance.new("UIGradient")
 local value = Instance.new("TextLabel")
-local UIGradient_11 = Instance.new("UIGradient")
-local dropdownelement = Instance.new("TextButton")
-local UIGradient_12 = Instance.new("UIGradient")
-local color = Instance.new("ImageButton")
-local button_5 = Instance.new("TextButton")
-local back_3 = Instance.new("ImageLabel")
-local fill_3 = Instance.new("ImageLabel")
-local UIGradient_13 = Instance.new("UIGradient")
-local title_7 = Instance.new("TextLabel")
+local UIGradient_10 = Instance.new("UIGradient")
+local section = Instance.new("ImageLabel")
+local stuff = Instance.new("ImageLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local subtab = Instance.new("Frame")
+local mainholder1 = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local mainholder2 = Instance.new("Frame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local mainholder3 = Instance.new("Frame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local tab = Instance.new("Frame")
 local colorpicker = Instance.new("ImageLabel")
 local sat = Instance.new("ImageLabel")
 local indicator = Instance.new("ImageLabel")
 local hue = Instance.new("ImageLabel")
 local indicator_2 = Instance.new("ImageButton")
-local UIGradient_14 = Instance.new("UIGradient")
-local title2_2 = Instance.new("TextLabel")
-local UIGradient_15 = Instance.new("UIGradient")
-local title1_2 = Instance.new("TextLabel")
-local UIGradient_16 = Instance.new("UIGradient")
+local UIGradient_11 = Instance.new("UIGradient")
+local title2 = Instance.new("TextLabel")
+local UIGradient_12 = Instance.new("UIGradient")
+local title1 = Instance.new("TextLabel")
+local UIGradient_13 = Instance.new("UIGradient")
 local rgbholder = Instance.new("Frame")
 local r = Instance.new("ImageLabel")
 local title_8 = Instance.new("TextLabel")
-local list_4 = Instance.new("UIListLayout")
+local list_2 = Instance.new("UIListLayout")
 local g = Instance.new("ImageLabel")
 local title_9 = Instance.new("TextLabel")
 local b = Instance.new("ImageLabel")
 local title_10 = Instance.new("TextLabel")
+local stab_tab = Instance.new("Frame")
+local list_3 = Instance.new("UIListLayout")
+local main = Instance.new("ImageLabel")
+local barup = Instance.new("ImageLabel")
+local title1_2 = Instance.new("TextLabel")
+local UIGradient_14 = Instance.new("UIGradient")
+local title2_2 = Instance.new("TextLabel")
+local UIGradient_15 = Instance.new("UIGradient")
+local bardown = Instance.new("ImageLabel")
+local mtabholder = Instance.new("Frame")
+local list_4 = Instance.new("UIListLayout")
+local stabholder = Instance.new("Frame")
+local holder = Instance.new("Frame")
+local circle_2 = Instance.new("ImageLabel")
+local dropdownelement = Instance.new("TextButton")
+local UIGradient_16 = Instance.new("UIGradient")
 
-gameoverui.Name = "gameoverui"
-gameoverui.Parent = cg
+--Properties:
+
+gameover.Name = "gameover"
+gameover.Parent = game:GetService('CoreGui')
+gameover.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 prefabs.Name = "prefabs"
-prefabs.Parent = gameoverui
+prefabs.Parent = gameover
 prefabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 prefabs.Size = UDim2.new(0, 100, 0, 100)
 prefabs.Visible = false
-
-tabbutton.Name = "tabbutton"
-tabbutton.Parent = prefabs
-tabbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tabbutton.BackgroundTransparency = 1.000
-tabbutton.Size = UDim2.new(0, 40, 0, 20)
-tabbutton.Font = Enum.Font.GothamSemibold
-tabbutton.Text = "Game"
-tabbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-tabbutton.TextSize = 12.000
-tabbutton.TextTransparency = 0.200
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient.Rotation = 90
-UIGradient.Parent = tabbutton
 
 subtabbutton.Name = "subtabbutton"
 subtabbutton.Parent = prefabs
@@ -150,169 +142,72 @@ icon.Image = "rbxassetid://4839912908"
 icon.ImageTransparency = 0.200
 icon.SliceCenter = Rect.new(4, 4, 296, 296)
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(88, 88, 88))}
-UIGradient_2.Rotation = 70
-UIGradient_2.Parent = icon
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(88, 88, 88))}
+UIGradient.Rotation = 70
+UIGradient.Parent = icon
 
-label.Name = "label"
-label.Parent = prefabs
-label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-label.BackgroundTransparency = 1.000
-label.Size = UDim2.new(1, 0, 0, 24)
+tabbutton.Name = "tabbutton"
+tabbutton.Parent = prefabs
+tabbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tabbutton.BackgroundTransparency = 1.000
+tabbutton.Size = UDim2.new(0, 40, 0, 20)
+tabbutton.Font = Enum.Font.GothamSemibold
+tabbutton.Text = "Game"
+tabbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+tabbutton.TextSize = 12.000
+tabbutton.TextTransparency = 0.200
 
-label_2.Name = "label"
-label_2.Parent = label
-label_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-label_2.BackgroundTransparency = 1.000
-label_2.Position = UDim2.new(0, 4, 0, 0)
-label_2.Size = UDim2.new(1, -16, 0, 24)
-label_2.Font = Enum.Font.GothamSemibold
-label_2.Text = "Section 2"
-label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-label_2.TextSize = 12.000
-label_2.TextWrapped = true
-label_2.TextXAlignment = Enum.TextXAlignment.Left
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Parent = tabbutton
+
+keybind.Name = "keybind"
+keybind.Parent = prefabs
+keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keybind.BackgroundTransparency = 1.000
+keybind.Size = UDim2.new(1, 0, 0, 30)
+keybind.Image = "rbxassetid://4641149554"
+keybind.ImageColor3 = Color3.fromRGB(28, 28, 28)
+keybind.ScaleType = Enum.ScaleType.Slice
+keybind.SliceCenter = Rect.new(4, 4, 296, 296)
+
+title.Name = "title"
+title.Parent = keybind
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0, 10, 0, -1)
+title.Size = UDim2.new(1, -10, 1, 0)
+title.Font = Enum.Font.GothamSemibold
+title.Text = "Keybind"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 12.000
+title.TextTransparency = 0.300
+title.TextWrapped = true
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+back.Name = "back"
+back.Parent = keybind
+back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+back.BackgroundTransparency = 1.000
+back.Position = UDim2.new(1, -64, 0.5, -10)
+back.Size = UDim2.new(0, 54, 0, 20)
+back.Image = "rbxassetid://4840201589"
+back.ImageColor3 = Color3.fromRGB(24, 24, 24)
+back.ScaleType = Enum.ScaleType.Slice
+back.SliceCenter = Rect.new(2, 2, 298, 298)
+
+TextLabel.Parent = back
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "RightShift"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 10.000
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
 UIGradient_3.Rotation = 90
-UIGradient_3.Parent = label_2
-
-stab_tab.Name = "stab_tab"
-stab_tab.Parent = prefabs
-stab_tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-stab_tab.BackgroundTransparency = 1.000
-stab_tab.Size = UDim2.new(1, 0, 1, 0)
-
-list.Name = "list"
-list.Parent = stab_tab
-list.SortOrder = Enum.SortOrder.LayoutOrder
-list.Padding = UDim.new(0, 5)
-
-main.Name = "main"
-main.Parent = prefabs
-main.Active = true
-main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-main.BackgroundTransparency = 1.000
-main.Position = UDim2.new(0.366345108, 0, 0.613013446, 0)
-main.Selectable = true
-main.Size = UDim2.new(0, 400, 0, 280)
-main.Image = "rbxassetid://4641149554"
-main.ImageColor3 = Color3.fromRGB(32, 32, 32)
-main.ScaleType = Enum.ScaleType.Slice
-main.SliceCenter = Rect.new(4, 4, 296, 296)
-
-barup.Name = "barup"
-barup.Parent = main
-barup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-barup.BackgroundTransparency = 1.000
-barup.Size = UDim2.new(1, 0, 0, 34)
-barup.Image = "rbxassetid://4550094255"
-barup.ImageColor3 = Color3.fromRGB(28, 28, 28)
-barup.ScaleType = Enum.ScaleType.Slice
-barup.SliceCenter = Rect.new(4, 4, 296, 296)
-
-title1.Name = "title1"
-title1.Parent = barup
-title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title1.BackgroundTransparency = 1.000
-title1.Position = UDim2.new(0, 16, 0, 12)
-title1.Size = UDim2.new(0, 43, 0, 20)
-title1.Font = Enum.Font.GothamSemibold
-title1.Text = "GAME"
-title1.TextColor3 = Color3.fromRGB(255, 90, 90)
-title1.TextSize = 14.000
-title1.TextXAlignment = Enum.TextXAlignment.Left
-
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_4.Rotation = 90
-UIGradient_4.Parent = title1
-
-title2.Name = "title2"
-title2.Parent = barup
-title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title2.BackgroundTransparency = 1.000
-title2.Position = UDim2.new(0, 59, 0, 12)
-title2.Size = UDim2.new(0, 27, 0, 20)
-title2.Font = Enum.Font.Gotham
-title2.Text = "OVER"
-title2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title2.TextSize = 14.000
-title2.TextXAlignment = Enum.TextXAlignment.Left
-
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_5.Rotation = 90
-UIGradient_5.Parent = title2
-
-bardown.Name = "bardown"
-bardown.Parent = barup
-bardown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-bardown.BackgroundTransparency = 1.000
-bardown.Position = UDim2.new(0, 0, 1, 0)
-bardown.Size = UDim2.new(1, 0, 0, 16)
-bardown.Image = "http://www.roblox.com/asset/?id=4837092909"
-bardown.ImageColor3 = Color3.fromRGB(28, 28, 28)
-
-mtabholder.Name = "mtabholder"
-mtabholder.Parent = barup
-mtabholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-mtabholder.BackgroundTransparency = 1.000
-mtabholder.Position = UDim2.new(0, 109, 0, 12)
-mtabholder.Size = UDim2.new(0.982500017, -118, 0, 20)
-
-list_2.Name = "list"
-list_2.Parent = mtabholder
-list_2.FillDirection = Enum.FillDirection.Horizontal
-list_2.HorizontalAlignment = Enum.HorizontalAlignment.Right
-list_2.SortOrder = Enum.SortOrder.LayoutOrder
-
-stabholder.Name = "stabholder"
-stabholder.Parent = main
-stabholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-stabholder.BackgroundTransparency = 1.000
-stabholder.Position = UDim2.new(0, 12, 0, 61)
-stabholder.Size = UDim2.new(0, 30, 1, -74)
-
-tabs.Name = "tabs"
-tabs.Parent = main
-tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tabs.BackgroundTransparency = 1.000
-tabs.Position = UDim2.new(0, 54, 0, 61)
-tabs.Size = UDim2.new(0, 332, 0, 198)
-
-tab.Name = "tab"
-tab.Parent = prefabs
-tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tab.BackgroundTransparency = 1.000
-tab.Size = UDim2.new(1, 0, 1, 0)
-
-mainholder1.Name = "mainholder1"
-mainholder1.Parent = tab
-mainholder1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-mainholder1.BackgroundTransparency = 1.000
-mainholder1.Size = UDim2.new(0, 160, 0, 206)
-
-UIListLayout.Parent = mainholder1
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 6)
-
-mainholder2.Name = "mainholder2"
-mainholder2.Parent = tab
-mainholder2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-mainholder2.BackgroundTransparency = 1.000
-mainholder2.Position = UDim2.new(0, 172, 0, 0)
-mainholder2.Size = UDim2.new(0, 160, 0, 206)
-
-UIListLayout_2.Parent = mainholder2
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_2.Padding = UDim.new(0, 6)
-
-circle.Name = "circle"
-circle.Parent = prefabs
-circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-circle.BackgroundTransparency = 1.000
-circle.Image = "rbxassetid://266543268"
-circle.ImageColor3 = Color3.fromRGB(33, 33, 33)
-circle.ImageTransparency = 0.500
+UIGradient_3.Parent = TextLabel
 
 slider.Name = "slider"
 slider.Parent = prefabs
@@ -356,37 +251,37 @@ fill.ImageColor3 = Color3.fromRGB(255, 90, 90)
 fill.ScaleType = Enum.ScaleType.Slice
 fill.SliceCenter = Rect.new(2, 2, 298, 298)
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(103, 103, 103))}
-UIGradient_6.Rotation = 90
-UIGradient_6.Parent = fill
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(103, 103, 103))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = fill
 
-circle_2.Name = "circle"
-circle_2.Parent = fill
-circle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-circle_2.BackgroundTransparency = 1.000
-circle_2.Position = UDim2.new(1, -6, 0.5, -6)
-circle_2.Size = UDim2.new(0, 12, 0, 12)
-circle_2.Image = "rbxassetid://4648597655"
-circle_2.ScaleType = Enum.ScaleType.Slice
-circle_2.SliceCenter = Rect.new(6, 6, 294, 294)
+circle.Name = "circle"
+circle.Parent = fill
+circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+circle.BackgroundTransparency = 1.000
+circle.Position = UDim2.new(1, -6, 0.5, -6)
+circle.Size = UDim2.new(0, 12, 0, 12)
+circle.Image = "rbxassetid://4648597655"
+circle.ScaleType = Enum.ScaleType.Slice
+circle.SliceCenter = Rect.new(6, 6, 294, 294)
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(157, 157, 157))}
-UIGradient_7.Rotation = 90
-UIGradient_7.Parent = circle_2
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(157, 157, 157))}
+UIGradient_5.Rotation = 90
+UIGradient_5.Parent = circle
 
-title.Name = "title"
-title.Parent = slider
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0, 10, 0, 4)
-title.Size = UDim2.new(1, -10, 0, 24)
-title.Font = Enum.Font.GothamSemibold
-title.Text = "Slider"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextSize = 12.000
-title.TextTransparency = 0.300
-title.TextWrapped = true
-title.TextXAlignment = Enum.TextXAlignment.Left
+title_2.Name = "title"
+title_2.Parent = slider
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Position = UDim2.new(0, 10, 0, 4)
+title_2.Size = UDim2.new(1, -10, 0, 24)
+title_2.Font = Enum.Font.GothamSemibold
+title_2.Text = "Slider"
+title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_2.TextSize = 12.000
+title_2.TextTransparency = 0.300
+title_2.TextWrapped = true
+title_2.TextXAlignment = Enum.TextXAlignment.Left
 
 val.Name = "val"
 val.Parent = slider
@@ -427,19 +322,19 @@ TextBox.TextSize = 12.000
 TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 
-title_2.Name = "title"
-title_2.Parent = textbox
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0, 10, 0, 4)
-title_2.Size = UDim2.new(1, -10, 0, 24)
-title_2.Font = Enum.Font.GothamSemibold
-title_2.Text = "Textbox"
-title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_2.TextSize = 12.000
-title_2.TextTransparency = 0.300
-title_2.TextWrapped = true
-title_2.TextXAlignment = Enum.TextXAlignment.Left
+title_3.Name = "title"
+title_3.Parent = textbox
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.Position = UDim2.new(0, 10, 0, 4)
+title_3.Size = UDim2.new(1, -10, 0, 24)
+title_3.Font = Enum.Font.GothamSemibold
+title_3.Text = "Textbox"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextSize = 12.000
+title_3.TextTransparency = 0.300
+title_3.TextWrapped = true
+title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 toggle.Name = "toggle"
 toggle.Parent = prefabs
@@ -461,19 +356,19 @@ button_2.Text = ""
 button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 button_2.TextSize = 14.000
 
-back.Name = "back"
-back.Parent = button_2
-back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-back.BackgroundTransparency = 1.000
-back.Position = UDim2.new(1, -24, 0.5, -8)
-back.Size = UDim2.new(0, 16, 0, 16)
-back.Image = "rbxassetid://4840201589"
-back.ImageColor3 = Color3.fromRGB(24, 24, 24)
-back.ScaleType = Enum.ScaleType.Slice
-back.SliceCenter = Rect.new(2, 2, 298, 298)
+back_2.Name = "back"
+back_2.Parent = button_2
+back_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+back_2.BackgroundTransparency = 1.000
+back_2.Position = UDim2.new(1, -24, 0.5, -8)
+back_2.Size = UDim2.new(0, 16, 0, 16)
+back_2.Image = "rbxassetid://4840201589"
+back_2.ImageColor3 = Color3.fromRGB(24, 24, 24)
+back_2.ScaleType = Enum.ScaleType.Slice
+back_2.SliceCenter = Rect.new(2, 2, 298, 298)
 
 fill_2.Name = "fill"
-fill_2.Parent = back
+fill_2.Parent = back_2
 fill_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 fill_2.BackgroundTransparency = 1.000
 fill_2.Position = UDim2.new(0, 2, 0, 2)
@@ -483,71 +378,46 @@ fill_2.ImageColor3 = Color3.fromRGB(255, 90, 90)
 fill_2.ScaleType = Enum.ScaleType.Slice
 fill_2.SliceCenter = Rect.new(2, 2, 298, 298)
 
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(103, 103, 103))}
-UIGradient_8.Rotation = 90
-UIGradient_8.Parent = fill_2
-
-title_3.Name = "title"
-title_3.Parent = toggle
-title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_3.BackgroundTransparency = 1.000
-title_3.Position = UDim2.new(0, 10, 0, -1)
-title_3.Size = UDim2.new(1, -10, 1, 0)
-title_3.Font = Enum.Font.GothamSemibold
-title_3.Text = "Toggle"
-title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_3.TextSize = 12.000
-title_3.TextTransparency = 0.300
-title_3.TextWrapped = true
-title_3.TextXAlignment = Enum.TextXAlignment.Left
-
-keybind.Name = "keybind"
-keybind.Parent = prefabs
-keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-keybind.BackgroundTransparency = 1.000
-keybind.Size = UDim2.new(1, 0, 0, 30)
-keybind.Image = "rbxassetid://4641149554"
-keybind.ImageColor3 = Color3.fromRGB(28, 28, 28)
-keybind.ScaleType = Enum.ScaleType.Slice
-keybind.SliceCenter = Rect.new(4, 4, 296, 296)
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(103, 103, 103))}
+UIGradient_6.Rotation = 90
+UIGradient_6.Parent = fill_2
 
 title_4.Name = "title"
-title_4.Parent = keybind
+title_4.Parent = toggle
 title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title_4.BackgroundTransparency = 1.000
 title_4.Position = UDim2.new(0, 10, 0, -1)
 title_4.Size = UDim2.new(1, -10, 1, 0)
 title_4.Font = Enum.Font.GothamSemibold
-title_4.Text = "Keybind"
+title_4.Text = "Toggle"
 title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 title_4.TextSize = 12.000
 title_4.TextTransparency = 0.300
 title_4.TextWrapped = true
 title_4.TextXAlignment = Enum.TextXAlignment.Left
 
-back_2.Name = "back"
-back_2.Parent = keybind
-back_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-back_2.BackgroundTransparency = 1.000
-back_2.Position = UDim2.new(1, -64, 0.5, -10)
-back_2.Size = UDim2.new(0, 54, 0, 20)
-back_2.Image = "rbxassetid://4840201589"
-back_2.ImageColor3 = Color3.fromRGB(24, 24, 24)
-back_2.ScaleType = Enum.ScaleType.Slice
-back_2.SliceCenter = Rect.new(2, 2, 298, 298)
+label.Name = "label"
+label.Parent = prefabs
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 1.000
+label.Size = UDim2.new(1, 0, 0, 24)
 
-TextLabel.Parent = back_2
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Size = UDim2.new(1, 0, 1, 0)
-TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "RightShift"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 10.000
+label_2.Name = "label"
+label_2.Parent = label
+label_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label_2.BackgroundTransparency = 1.000
+label_2.Position = UDim2.new(0, 4, 0, 0)
+label_2.Size = UDim2.new(1, -16, 0, 24)
+label_2.Font = Enum.Font.GothamSemibold
+label_2.Text = "Section 2"
+label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_2.TextSize = 12.000
+label_2.TextWrapped = true
+label_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_9.Rotation = 90
-UIGradient_9.Parent = TextLabel
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_7.Rotation = 90
+UIGradient_7.Parent = label_2
 
 button_3.Name = "button"
 button_3.Parent = prefabs
@@ -573,134 +443,6 @@ title_5.TextTransparency = 0.300
 title_5.TextWrapped = true
 title_5.TextXAlignment = Enum.TextXAlignment.Left
 
-dropdown.Name = "dropdown"
-dropdown.Parent = prefabs
-dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dropdown.BackgroundTransparency = 1.000
-dropdown.Position = UDim2.new(0.0625, 0, -0.490291268, 0)
-dropdown.Size = UDim2.new(1, 0, 0, 60)
-dropdown.ZIndex = 2
-dropdown.Image = "rbxassetid://4641149554"
-dropdown.ImageColor3 = Color3.fromRGB(28, 28, 28)
-dropdown.ScaleType = Enum.ScaleType.Slice
-dropdown.SliceCenter = Rect.new(4, 4, 296, 296)
-
-dropframe.Name = "dropframe"
-dropframe.Parent = dropdown
-dropframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dropframe.BackgroundTransparency = 1.000
-dropframe.ClipsDescendants = true
-dropframe.Position = UDim2.new(0, 10, 1, -6)
-dropframe.Size = UDim2.new(1, -20, 0, 0)
-dropframe.ZIndex = 2
-dropframe.Image = "rbxassetid://4840201589"
-dropframe.ImageColor3 = Color3.fromRGB(24, 24, 24)
-dropframe.ScaleType = Enum.ScaleType.Slice
-dropframe.SliceCenter = Rect.new(2, 2, 298, 298)
-
-dropscroll.Name = "dropscroll"
-dropscroll.Parent = dropframe
-dropscroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dropscroll.BackgroundTransparency = 1.000
-dropscroll.BorderSizePixel = 0
-dropscroll.ClipsDescendants = false
-dropscroll.Position = UDim2.new(0, 4, 0, 4)
-dropscroll.Size = UDim2.new(1, -8, 1, -8)
-dropscroll.ZIndex = 2
-dropscroll.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-dropscroll.CanvasSize = UDim2.new(0, 0, 0, 0)
-dropscroll.ScrollBarThickness = 0
-dropscroll.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-
-list_3.Name = "list"
-list_3.Parent = dropscroll
-list_3.SortOrder = Enum.SortOrder.LayoutOrder
-
-title_6.Name = "title"
-title_6.Parent = dropdown
-title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_6.BackgroundTransparency = 1.000
-title_6.Position = UDim2.new(0, 10, 0, 4)
-title_6.Size = UDim2.new(1, -10, 0, 24)
-title_6.ZIndex = 2
-title_6.Font = Enum.Font.GothamSemibold
-title_6.Text = "Dropdown"
-title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_6.TextSize = 12.000
-title_6.TextTransparency = 0.300
-title_6.TextWrapped = true
-title_6.TextXAlignment = Enum.TextXAlignment.Left
-
-button_4.Name = "button"
-button_4.Parent = dropdown
-button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-button_4.BackgroundTransparency = 1.000
-button_4.Position = UDim2.new(0, 9, 0, 30)
-button_4.Size = UDim2.new(1, -18, 0, 22)
-button_4.ZIndex = 2
-button_4.Font = Enum.Font.SourceSans
-button_4.Text = ""
-button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-button_4.TextSize = 14.000
-
-selected.Name = "selected"
-selected.Parent = button_4
-selected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-selected.BackgroundTransparency = 1.000
-selected.Position = UDim2.new(0, 1, 0, 1)
-selected.Size = UDim2.new(1, -2, 1, -2)
-selected.ZIndex = 2
-selected.Image = "rbxassetid://4840201589"
-selected.ImageColor3 = Color3.fromRGB(24, 24, 24)
-selected.ScaleType = Enum.ScaleType.Slice
-selected.SliceCenter = Rect.new(2, 2, 298, 298)
-
-icon_2.Name = "icon"
-icon_2.Parent = selected
-icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-icon_2.BackgroundTransparency = 1.000
-icon_2.Position = UDim2.new(1, -18, 0, 0)
-icon_2.Size = UDim2.new(0, 18, 0, 18)
-icon_2.ZIndex = 2
-icon_2.Image = "rbxassetid://4852002601"
-
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_10.Rotation = 90
-UIGradient_10.Parent = icon_2
-
-value.Name = "value"
-value.Parent = selected
-value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-value.BackgroundTransparency = 1.000
-value.Position = UDim2.new(0, 6, 0, 0)
-value.Size = UDim2.new(1, 0, 1, 0)
-value.ZIndex = 2
-value.Font = Enum.Font.Gotham
-value.Text = "Drop Value"
-value.TextColor3 = Color3.fromRGB(255, 255, 255)
-value.TextSize = 11.000
-value.TextWrapped = true
-value.TextXAlignment = Enum.TextXAlignment.Left
-
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_11.Rotation = 90
-UIGradient_11.Parent = value
-
-dropdownelement.Name = "dropdownelement"
-dropdownelement.Parent = prefabs
-dropdownelement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dropdownelement.BackgroundTransparency = 1.000
-dropdownelement.Size = UDim2.new(1, 0, 0, 20)
-dropdownelement.Font = Enum.Font.Gotham
-dropdownelement.Text = "Drop Value 1"
-dropdownelement.TextColor3 = Color3.fromRGB(255, 255, 255)
-dropdownelement.TextSize = 11.000
-dropdownelement.TextTransparency = 0.300
-
-UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_12.Rotation = 90
-UIGradient_12.Parent = dropdownelement
-
 color.Name = "color"
 color.Parent = prefabs
 color.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -712,19 +454,19 @@ color.ImageColor3 = Color3.fromRGB(28, 28, 28)
 color.ScaleType = Enum.ScaleType.Slice
 color.SliceCenter = Rect.new(4, 4, 296, 296)
 
-button_5.Name = "button"
-button_5.Parent = color
-button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-button_5.BackgroundTransparency = 1.000
-button_5.Position = UDim2.new(1, -46, 0.5, -9)
-button_5.Size = UDim2.new(0, 36, 0, 18)
-button_5.Font = Enum.Font.SourceSans
-button_5.Text = ""
-button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-button_5.TextSize = 14.000
+button_4.Name = "button"
+button_4.Parent = color
+button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+button_4.BackgroundTransparency = 1.000
+button_4.Position = UDim2.new(1, -46, 0.5, -9)
+button_4.Size = UDim2.new(0, 36, 0, 18)
+button_4.Font = Enum.Font.SourceSans
+button_4.Text = ""
+button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+button_4.TextSize = 14.000
 
 back_3.Name = "back"
-back_3.Parent = button_5
+back_3.Parent = button_4
 back_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 back_3.BackgroundTransparency = 1.000
 back_3.Position = UDim2.new(0, 1, 0, 1)
@@ -745,23 +487,207 @@ fill_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
 fill_3.ScaleType = Enum.ScaleType.Slice
 fill_3.SliceCenter = Rect.new(2, 2, 298, 298)
 
-UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(103, 103, 103))}
-UIGradient_13.Rotation = 90
-UIGradient_13.Parent = fill_3
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(103, 103, 103))}
+UIGradient_8.Rotation = 90
+UIGradient_8.Parent = fill_3
+
+title_6.Name = "title"
+title_6.Parent = color
+title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_6.BackgroundTransparency = 1.000
+title_6.Position = UDim2.new(0, 10, 0, -1)
+title_6.Size = UDim2.new(0, 69, 1, 0)
+title_6.Font = Enum.Font.GothamSemibold
+title_6.Text = "Color picker"
+title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_6.TextSize = 12.000
+title_6.TextTransparency = 0.300
+title_6.TextWrapped = true
+title_6.TextXAlignment = Enum.TextXAlignment.Left
+
+dropdown.Name = "dropdown"
+dropdown.Parent = prefabs
+dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dropdown.BackgroundTransparency = 1.000
+dropdown.Position = UDim2.new(0.0625, 0, -0.490291268, 0)
+dropdown.Size = UDim2.new(1, 0, 0, 60)
+dropdown.ZIndex = 2
+dropdown.Image = "rbxassetid://4641149554"
+dropdown.ImageColor3 = Color3.fromRGB(28, 28, 28)
+dropdown.ScaleType = Enum.ScaleType.Slice
+dropdown.SliceCenter = Rect.new(4, 4, 296, 296)
+
+dropframe.Name = "dropframe"
+dropframe.Parent = dropdown
+dropframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dropframe.BackgroundTransparency = 1.000
+dropframe.Position = UDim2.new(0, 10, 1, -6)
+dropframe.Size = UDim2.new(1, -20, 0, 0)
+dropframe.ZIndex = 2
+dropframe.Image = "rbxassetid://4840201589"
+dropframe.ImageColor3 = Color3.fromRGB(24, 24, 24)
+dropframe.ScaleType = Enum.ScaleType.Slice
+dropframe.SliceCenter = Rect.new(2, 2, 298, 298)
+
+dropscroll.Name = "dropscroll"
+dropscroll.Parent = dropframe
+dropscroll.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+dropscroll.BorderSizePixel = 0
+dropscroll.Position = UDim2.new(0, 4, 0, 4)
+dropscroll.Size = UDim2.new(1, -8, 1, 0)
+dropscroll.ZIndex = 5
+dropscroll.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+dropscroll.CanvasSize = UDim2.new(0, 0, 0, 0)
+dropscroll.ScrollBarThickness = 0
+dropscroll.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+
+list.Name = "list"
+list.Parent = dropscroll
+list.SortOrder = Enum.SortOrder.LayoutOrder
 
 title_7.Name = "title"
-title_7.Parent = color
+title_7.Parent = dropdown
 title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title_7.BackgroundTransparency = 1.000
-title_7.Position = UDim2.new(0, 10, 0, -1)
-title_7.Size = UDim2.new(0, 69, 1, 0)
+title_7.Position = UDim2.new(0, 10, 0, 4)
+title_7.Size = UDim2.new(1, -10, 0, 24)
+title_7.ZIndex = 2
 title_7.Font = Enum.Font.GothamSemibold
-title_7.Text = "Color picker"
+title_7.Text = "Dropdown"
 title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 title_7.TextSize = 12.000
 title_7.TextTransparency = 0.300
 title_7.TextWrapped = true
 title_7.TextXAlignment = Enum.TextXAlignment.Left
+
+button_5.Name = "button"
+button_5.Parent = dropdown
+button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+button_5.BackgroundTransparency = 1.000
+button_5.Position = UDim2.new(0, 9, 0, 30)
+button_5.Size = UDim2.new(1, -18, 0, 22)
+button_5.ZIndex = 2
+button_5.Font = Enum.Font.SourceSans
+button_5.Text = ""
+button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+button_5.TextSize = 14.000
+
+selected.Name = "selected"
+selected.Parent = button_5
+selected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+selected.BackgroundTransparency = 1.000
+selected.Position = UDim2.new(0, 1, 0, 1)
+selected.Size = UDim2.new(1, -2, 1, -2)
+selected.ZIndex = 2
+selected.Image = "rbxassetid://4840201589"
+selected.ImageColor3 = Color3.fromRGB(24, 24, 24)
+selected.ScaleType = Enum.ScaleType.Slice
+selected.SliceCenter = Rect.new(2, 2, 298, 298)
+
+icon_2.Name = "icon"
+icon_2.Parent = selected
+icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+icon_2.BackgroundTransparency = 1.000
+icon_2.Position = UDim2.new(1, -18, 0, 0)
+icon_2.Size = UDim2.new(0, 18, 0, 18)
+icon_2.ZIndex = 2
+icon_2.Image = "rbxassetid://4852002601"
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_9.Rotation = 90
+UIGradient_9.Parent = icon_2
+
+value.Name = "value"
+value.Parent = selected
+value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value.BackgroundTransparency = 1.000
+value.Position = UDim2.new(0, 6, 0, 0)
+value.Size = UDim2.new(1, 0, 1, 0)
+value.ZIndex = 2
+value.Font = Enum.Font.Gotham
+value.Text = "Drop Value"
+value.TextColor3 = Color3.fromRGB(255, 255, 255)
+value.TextSize = 11.000
+value.TextWrapped = true
+value.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_10.Rotation = 90
+UIGradient_10.Parent = value
+
+section.Name = "section"
+section.Parent = prefabs
+section.Active = true
+section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+section.BackgroundTransparency = 1.000
+section.Position = UDim2.new(-0.556249976, 0, 0.534446776, 0)
+section.Selectable = true
+section.Size = UDim2.new(1, 0, 0, 200)
+section.Image = "rbxassetid://4641149554"
+section.ImageColor3 = Color3.fromRGB(255, 90, 90)
+section.ScaleType = Enum.ScaleType.Slice
+section.SliceCenter = Rect.new(4, 4, 296, 296)
+
+stuff.Name = "stuff"
+stuff.Parent = section
+stuff.Active = true
+stuff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stuff.BackgroundTransparency = 1.000
+stuff.Position = UDim2.new(0, 2, 0, 2)
+stuff.Selectable = true
+stuff.Size = UDim2.new(1, -4, 1, -4)
+stuff.Image = "rbxassetid://4641149554"
+stuff.ImageColor3 = Color3.fromRGB(32, 32, 32)
+stuff.ScaleType = Enum.ScaleType.Slice
+stuff.SliceCenter = Rect.new(4, 4, 296, 296)
+
+UIListLayout.Parent = stuff
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 6)
+
+subtab.Name = "subtab"
+subtab.Parent = prefabs
+subtab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+subtab.BackgroundTransparency = 1.000
+subtab.Size = UDim2.new(1, 0, 1, 0)
+
+mainholder1.Name = "mainholder1"
+mainholder1.Parent = subtab
+mainholder1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainholder1.BackgroundTransparency = 1.000
+mainholder1.Size = UDim2.new(0, 160, 1, 0)
+
+UIListLayout_2.Parent = mainholder1
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 6)
+
+mainholder2.Name = "mainholder2"
+mainholder2.Parent = subtab
+mainholder2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainholder2.BackgroundTransparency = 1.000
+mainholder2.Position = UDim2.new(0, 172, 0, 0)
+mainholder2.Size = UDim2.new(0, 160, 1, 0)
+
+UIListLayout_3.Parent = mainholder2
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 6)
+
+mainholder3.Name = "mainholder3"
+mainholder3.Parent = subtab
+mainholder3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainholder3.BackgroundTransparency = 1.000
+mainholder3.Position = UDim2.new(0, 344, 0, 0)
+mainholder3.Size = UDim2.new(0, 160, 1, 0)
+
+UIListLayout_4.Parent = mainholder3
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0, 6)
+
+tab.Name = "tab"
+tab.Parent = prefabs
+tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tab.BackgroundTransparency = 1.000
+tab.Size = UDim2.new(1, 0, 1, 0)
 
 colorpicker.Name = "colorpicker"
 colorpicker.Parent = prefabs
@@ -811,41 +737,41 @@ indicator_2.Size = UDim2.new(0, 18, 0, 18)
 indicator_2.ZIndex = 2
 indicator_2.Image = "rbxassetid://4852002601"
 
-UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_14.Rotation = 90
-UIGradient_14.Parent = indicator_2
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_11.Rotation = 90
+UIGradient_11.Parent = indicator_2
 
-title2_2.Name = "title2"
-title2_2.Parent = colorpicker
-title2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title2_2.BackgroundTransparency = 1.000
-title2_2.Position = UDim2.new(0, 54, 0, 10)
-title2_2.Size = UDim2.new(0, 41, 0, 20)
-title2_2.Font = Enum.Font.Gotham
-title2_2.Text = "Picker"
-title2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-title2_2.TextSize = 14.000
-title2_2.TextXAlignment = Enum.TextXAlignment.Left
+title2.Name = "title2"
+title2.Parent = colorpicker
+title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title2.BackgroundTransparency = 1.000
+title2.Position = UDim2.new(0, 54, 0, 10)
+title2.Size = UDim2.new(0, 41, 0, 20)
+title2.Font = Enum.Font.Gotham
+title2.Text = "Picker"
+title2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title2.TextSize = 14.000
+title2.TextXAlignment = Enum.TextXAlignment.Left
 
-UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_15.Rotation = 90
-UIGradient_15.Parent = title2_2
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_12.Rotation = 90
+UIGradient_12.Parent = title2
 
-title1_2.Name = "title1"
-title1_2.Parent = colorpicker
-title1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title1_2.BackgroundTransparency = 1.000
-title1_2.Position = UDim2.new(0, 12, 0, 10)
-title1_2.Size = UDim2.new(0, 37, 0, 20)
-title1_2.Font = Enum.Font.GothamSemibold
-title1_2.Text = "Color"
-title1_2.TextColor3 = Color3.fromRGB(255, 90, 90)
-title1_2.TextSize = 14.000
-title1_2.TextXAlignment = Enum.TextXAlignment.Left
+title1.Name = "title1"
+title1.Parent = colorpicker
+title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title1.BackgroundTransparency = 1.000
+title1.Position = UDim2.new(0, 12, 0, 10)
+title1.Size = UDim2.new(0, 37, 0, 20)
+title1.Font = Enum.Font.GothamSemibold
+title1.Text = "Color"
+title1.TextColor3 = Color3.fromRGB(255, 90, 90)
+title1.TextSize = 14.000
+title1.TextXAlignment = Enum.TextXAlignment.Left
 
-UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
-UIGradient_16.Rotation = 90
-UIGradient_16.Parent = title1_2
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_13.Rotation = 90
+UIGradient_13.Parent = title1
 
 rgbholder.Name = "rgbholder"
 rgbholder.Parent = colorpicker
@@ -875,11 +801,11 @@ title_8.Text = "R: 255"
 title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 title_8.TextSize = 10.000
 
-list_4.Name = "list"
-list_4.Parent = rgbholder
-list_4.FillDirection = Enum.FillDirection.Horizontal
-list_4.SortOrder = Enum.SortOrder.LayoutOrder
-list_4.Padding = UDim.new(0, 4)
+list_2.Name = "list"
+list_2.Parent = rgbholder
+list_2.FillDirection = Enum.FillDirection.Horizontal
+list_2.SortOrder = Enum.SortOrder.LayoutOrder
+list_2.Padding = UDim.new(0, 4)
 
 g.Name = "g"
 g.Parent = rgbholder
@@ -923,6 +849,130 @@ title_10.Text = "B: 255"
 title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 title_10.TextSize = 10.000
 
+stab_tab.Name = "stab_tab"
+stab_tab.Parent = prefabs
+stab_tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stab_tab.BackgroundTransparency = 1.000
+stab_tab.Size = UDim2.new(1, 0, 1, 0)
+
+list_3.Name = "list"
+list_3.Parent = stab_tab
+list_3.SortOrder = Enum.SortOrder.LayoutOrder
+list_3.Padding = UDim.new(0, 5)
+
+main.Name = "main"
+main.Parent = prefabs
+main.Active = true
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.312563419, 0, 0.0807293206, 0)
+main.Selectable = true
+main.Size = UDim2.new(0, 570, 0, 560)
+main.Image = "rbxassetid://4641149554"
+main.ImageColor3 = Color3.fromRGB(32, 32, 32)
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(4, 4, 296, 296)
+
+barup.Name = "barup"
+barup.Parent = main
+barup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+barup.BackgroundTransparency = 1.000
+barup.Size = UDim2.new(1, 0, 0, 34)
+barup.Image = "rbxassetid://4550094255"
+barup.ImageColor3 = Color3.fromRGB(28, 28, 28)
+barup.ScaleType = Enum.ScaleType.Slice
+barup.SliceCenter = Rect.new(4, 4, 296, 296)
+
+title1_2.Name = "title1"
+title1_2.Parent = barup
+title1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title1_2.BackgroundTransparency = 1.000
+title1_2.Position = UDim2.new(0, 16, 0, 12)
+title1_2.Size = UDim2.new(0, 43, 0, 20)
+title1_2.Font = Enum.Font.GothamSemibold
+title1_2.Text = "GAME"
+title1_2.TextColor3 = Color3.fromRGB(255, 90, 90)
+title1_2.TextSize = 14.000
+title1_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_14.Rotation = 90
+UIGradient_14.Parent = title1_2
+
+title2_2.Name = "title2"
+title2_2.Parent = barup
+title2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title2_2.BackgroundTransparency = 1.000
+title2_2.Position = UDim2.new(0, 57, 0, 12)
+title2_2.Size = UDim2.new(0, 27, 0, 20)
+title2_2.Font = Enum.Font.Gotham
+title2_2.Text = "OVER"
+title2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title2_2.TextSize = 14.000
+title2_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_15.Rotation = 90
+UIGradient_15.Parent = title2_2
+
+bardown.Name = "bardown"
+bardown.Parent = barup
+bardown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bardown.BackgroundTransparency = 1.000
+bardown.Position = UDim2.new(0, 0, 1, 0)
+bardown.Size = UDim2.new(1, 0, 0, 16)
+bardown.Image = "http://www.roblox.com/asset/?id=4837092909"
+bardown.ImageColor3 = Color3.fromRGB(28, 28, 28)
+
+mtabholder.Name = "mtabholder"
+mtabholder.Parent = barup
+mtabholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mtabholder.BackgroundTransparency = 1.000
+mtabholder.Position = UDim2.new(0, 109, 0, 12)
+mtabholder.Size = UDim2.new(0.982500017, -118, 0, 20)
+
+list_4.Name = "list"
+list_4.Parent = mtabholder
+list_4.FillDirection = Enum.FillDirection.Horizontal
+list_4.HorizontalAlignment = Enum.HorizontalAlignment.Right
+list_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+stabholder.Name = "stabholder"
+stabholder.Parent = main
+stabholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stabholder.BackgroundTransparency = 1.000
+stabholder.Position = UDim2.new(0, 12, 0, 61)
+stabholder.Size = UDim2.new(0, 30, 1, -74)
+
+holder.Name = "holder"
+holder.Parent = main
+holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+holder.BackgroundTransparency = 1.000
+holder.Position = UDim2.new(0, 54, 0, 61)
+holder.Size = UDim2.new(1, -74, 1, -81)
+
+circle_2.Name = "circle"
+circle_2.Parent = prefabs
+circle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+circle_2.BackgroundTransparency = 1.000
+circle_2.Image = "rbxassetid://266543268"
+circle_2.ImageTransparency = 0.500
+
+dropdownelement.Name = "dropdownelement"
+dropdownelement.Parent = prefabs
+dropdownelement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dropdownelement.BackgroundTransparency = 1.000
+dropdownelement.Size = UDim2.new(1, 0, 0, 20)
+dropdownelement.Font = Enum.Font.Gotham
+dropdownelement.Text = "Drop Value 1"
+dropdownelement.TextColor3 = Color3.fromRGB(255, 255, 255)
+dropdownelement.TextSize = 11.000
+dropdownelement.TextTransparency = 0.300
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(179, 179, 179))}
+UIGradient_16.Rotation = 90
+UIGradient_16.Parent = dropdownelement
+
 local TweenService = game:GetService("TweenService")
 local UIS = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -930,7 +980,7 @@ local RunService = game:GetService("RunService")
 local ps = game:GetService("Players")
 local p = ps.LocalPlayer
 local mouse = p:GetMouse()
-local UI = gameoverui
+local UI = gameover
 
 local function new(class)
 	if UI and UI:FindFirstChild("prefabs") then
@@ -952,8 +1002,10 @@ local function insert(main, obj)
 	
 	local _1 = main:FindFirstChild("mainholder1")
 	local _2 = main:FindFirstChild("mainholder2")
-	if not (_1 and _2) then return end
-	
+	local _3 = main:FindFirstChild("mainholder3")
+
+	if not (_1 and _2 and _3) then return end
+
 	local max = _1.AbsoluteSize.Y
 	local function fit(x)
 		local n = 0
@@ -969,6 +1021,9 @@ local function insert(main, obj)
 		return true
 	elseif fit(_2) + 6 + obj.AbsoluteSize.Y <= max then
 		obj.Parent = _2
+		return true
+	elseif fit(_3) + 6 + obj.AbsoluteSize.Y <= max then
+		obj.Parent = _3
 		return true
 	end
 end
@@ -1005,9 +1060,9 @@ local function ripple(button, x, y)
 
 		local size = 0
 		if button.AbsoluteSize.X > button.AbsoluteSize.Y then
-			 size = button.AbsoluteSize.X * 1.5
+			size = button.AbsoluteSize.X * 1.5
 		elseif button.AbsoluteSize.X < button.AbsoluteSize.Y then
-			 size = button.AbsoluteSize.Y * 1.5
+			size = button.AbsoluteSize.Y * 1.5
 		elseif button.AbsoluteSize.X == button.AbsoluteSize.Y then
 			size = button.AbsoluteSize.X * 1.5
 		end
@@ -1078,58 +1133,48 @@ local function create_hover_event(object)
 	end)
 end
 
-local library = {
-	["icons"] = {
-		["aim"] = 4839912908,
-		["palette"] = 4851430904,
-		["visual"] = 4840131686,
-		["character"] = 4896993168,
-		["money"] = 4896998441,
-		["gun"] = 4897002291,
-	}
-}
-
 function library.new()
-	local ui_data = {}
-	
-	local checks = {
+    local ui_data = {}
+
+    local checks = {
 		["binding"] = false,
 		["dropdown_open"] = false,
 	}
 
 	local n = 0
-	local s_stack = {}
-	
-	local main = new("main")
-	main.Parent = UI
+    local s_stack = {}
+
+    local main = new("main")
+	main.Parent = gameover
 	main.Draggable = true
-	main.Position = UDim2.new(0.5, -(main.AbsoluteSize.X / 2), 0.5, -(main.AbsoluteSize.Y / 2))
-	
-	local barup = main:FindFirstChild("barup")
+    main.Position = UDim2.new(0.5, -(main.AbsoluteSize.X / 2), 0.5, -(main.AbsoluteSize.Y / 2))
+
+    local barup = main:FindFirstChild("barup")
 	local stabholder = main:FindFirstChild("stabholder")
-	local tabs = main:FindFirstChild("tabs")
-	
-	function ui_data:AddTab(tab_name)
-		local tab_data = {}
+    local tabs = main:FindFirstChild("holder")
+
+    function ui_data:AddTab(tab_name)
+        local tab_data = {}
+
 		tab_name = tostring(tab_name or "New Tab")
 		local tab_button = new("tabbutton")
 		create_ripple_event(tab_button)
 		tab_button.Text = tab_name
 		tab_button.Parent = barup:FindFirstChild("mtabholder")
 		tab_button.Size = UDim2.new(0, gNameLen(tab_button), 0, 20)
-		tab_button.TextTransparency = 0.5
-		
-		local stab_tab = new("stab_tab")
+        tab_button.TextTransparency = 0.5
+        
+        local stab_tab = new("stab_tab")
 		stab_tab.Parent = stabholder
-		stab_tab.Visible = false
+        stab_tab.Visible = false
 
-		local tab_folder = Instance.new("Frame", tabs)
+        local tab_folder = Instance.new("Frame", tabs)
 		tab_folder.Transparency = 1
 		tab_folder.Size = UDim2.new(1, 0, 1, 0)
 		tab_folder.Name = "tab_folder"
-		tab_folder.Visible = false
-		
-		function tab_data:Show()
+        tab_folder.Visible = false
+        
+        function tab_data:Show()
 			for i, v in next, stabholder:GetChildren() do
 				v.Visible = false
 			end
@@ -1146,27 +1191,31 @@ function library.new()
 			if stab_tab:GetChildren()[1] then
 			end
 			Resize(tab_button, {TextTransparency = 0}, 0.5)
-		end
-		
+        end
+
 		n = 0
 
 		tab_button.MouseButton1Click:Connect(function()
 			tab_data:Show()
 		end)
-		
-		function tab_data:AddSubtab(icon)
-			local stab_data = {}
-			local subtabbutton = new("subtabbutton")
+
+        function tab_data:AddSubTab(icon)
+            local stab_data = {}
+
+            local subtabbutton = new("subtabbutton")
 			create_ripple_event(subtabbutton)
 			create_hover_event(subtabbutton)
 			subtabbutton.Parent = stab_tab
 			subtabbutton:FindFirstChild("icon").Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=" .. tostring(icon)
-			subtabbutton:FindFirstChild("icon").ImageTransparency = 0.5
-			
-			local tab = new("tab")
+            subtabbutton:FindFirstChild("icon").ImageTransparency = 0.5
+            
+            local tab = new("tab")
 			tab.Parent = tab_folder
 			tab.Visible = false
-			
+
+			local subtab = new("subtab")
+			subtab.Parent = tab
+
 			function stab_data:Show()
 				tab_data:Show()
 				for i, v in next, stab_tab:GetChildren() do
@@ -1180,12 +1229,12 @@ function library.new()
 				Resize(subtabbutton:FindFirstChild("icon"), {ImageTransparency = 0}, 0.5)
 				tab_folder.Visible = true
 				tab.Visible = true
-			end
-			
-			subtabbutton.MouseButton1Click:Connect(function()
+            end
+            
+            subtabbutton.MouseButton1Click:Connect(function()
 				stab_data:Show()
 			end)
-			
+
 			n = n + 1
 			if n == 1 then
 				table.insert(s_stack, function()
@@ -1194,22 +1243,55 @@ function library.new()
 			end
 
 			do -- UI Elements
-			
+
+				function stab_data:AddSection()
+					local section_data = {}
+
+					local section = new("section")
+					local stuff = section:FindFirstChild('stuff')
+
+					local function update_size()
+						local x = 0
+						for i, v in next, stuff:GetChildren() do
+							if not (v:IsA("UIListLayout")) then
+								x = x + 6 + v.AbsoluteSize.Y
+							end
+						end
+						section.Size = UDim2.new(1, 0, 0, x)
+					end
+
+					for i, v in next, stab_data do
+						if i ~= 'AddSection' then
+							section_data[i] = function(...)
+								local data, obj = v(...)
+								obj.Parent = stuff
+								update_size()
+								return data, obj
+							end
+						end
+					end
+
+					update_size()
+					insert(subtab, section)
+					return section_data
+				end
+
 				function stab_data:AddLabel(text)
 					local label_data = {}
+
 					text = tostring(text or "New Label")
 					local label = new("label")
 					label:FindFirstChild("label").Text = text
-					
-					insert(tab, label)
+
+					insert(subtab, label)
 					return label_data, label
 				end
-				
+
 				function stab_data:AddButton(text, callback)
 					local button_data = {}
 					text = tostring(text or "New Button")
 					callback = typeof(callback) == "function" and callback or function()end
-					
+
 					local button = new("button")
 					create_ripple_event(button)
 					create_hover_event(button)
@@ -1217,11 +1299,11 @@ function library.new()
 					button.MouseButton1Click:Connect(function()
 						pcall(callback)
 					end)
-					
-					insert(tab, button)
+
+					insert(subtab, button)
 					return button_data, button
 				end
-				
+
 				function stab_data:AddToggle(text, callback)
 					local toggle_data = {}
 					text = tostring(text or "New Toggle")
@@ -1257,10 +1339,10 @@ function library.new()
 						end
 					end
 					
-					insert(tab, toggle)
+					insert(subtab, toggle)
 					return toggle_data, toggle
 				end
-				
+
 				function stab_data:AddTextBox(text, callback)
 					local textbox_data = {}
 					text = tostring(text or "New TextBox")
@@ -1277,10 +1359,10 @@ function library.new()
 						end
 					end)
 					
-					insert(tab, textbox)
+					insert(subtab, textbox)
 					return textbox_data, textbox
 				end
-				
+
 				function stab_data:AddSlider(text, callback, min, max)
 					local slider_data = {}
 					text = tostring(text or "New Slider")
@@ -1369,13 +1451,13 @@ function library.new()
 						-- slider_data:Set(tonumber(min) or 0)
 					end
 					
-					insert(tab, slider)
+					insert(subtab, slider)
 					return slider_data, slider
 				end
-				
+
 				function stab_data:AddKeybind(text, callback, standard)
 					local keybind_data = {}
-					text = tostring(text or "New Slider")
+					text = tostring(text or "New Keybind")
 					callback = typeof(callback) == "function" and callback or function()end
 					standard = typeof(standard) == "EnumItem" and standard or Enum.KeyCode.RightShift
 					
@@ -1424,13 +1506,13 @@ function library.new()
 						keybind_data:Set(a.KeyCode)
 					end)
 					
-					insert(tab, keybind)
+					insert(subtab, keybind)
 					return keybind_data, keybind
 				end
-				
+
 				function stab_data:AddDropdown(text, callback)
 					local dropdown_data = {}
-					text = tostring(text or "New Slider")
+					text = tostring(text or "New Dropdown")
 					callback = typeof(callback) == "function" and callback or function()end
 					
 					local dropdown = new("dropdown")
@@ -1444,7 +1526,7 @@ function library.new()
 						local icon = button:FindFirstChild("selected"):FindFirstChild("icon")
 						local dropscroll = dropframe:FindFirstChild("dropscroll")
 						value.Text = "Select ..."
-						
+
 						local open = false
 						dropdown:FindFirstChild("button").MouseButton1Click:Connect(function()
 							if not (open) then -- Open Dropdown
@@ -1456,7 +1538,7 @@ function library.new()
 							end
 							open = not open
 						end)
-						
+
 						function dropdown_data:Add(name)
 							local element_data = {}
 							name = tostring(name or "New Element")
@@ -1481,22 +1563,23 @@ function library.new()
 						end
 					end
 					
-					insert(tab, dropdown)
+					insert(subtab, dropdown)
 					return dropdown_data, dropdown
 				end
-				
+
 				function stab_data:AddColorPicker(text, callback)
 					local colorpicker_data = {}
 					text = tostring(text or "New ColorPicker")
 					callback = typeof(callback) == "function" and callback or function()end
 					local cp_button = new("color")
-					create_ripple_event(cp_button)
-					create_hover_event(cp_button)
 					cp_button:FindFirstChild("title").Text = text
 					
 					local button = cp_button:FindFirstChild("button")
 					local selected_color = button:FindFirstChild("back"):FindFirstChild("fill")
-					cp_button.MouseButton1Click:Connect(function()
+					create_ripple_event(button)
+					create_hover_event(cp_button)
+
+					button.MouseButton1Click:Connect(function()
 						if not (main:FindFirstChild("colorpicker")) then
 						
 							do -- Color Picker
@@ -1506,7 +1589,7 @@ function library.new()
 								local h = 0
 								local s = 1
 								local v = 1
-								
+
 								local rgbholder = color_picker:FindFirstChild("rgbholder")
 								local hue = color_picker:FindFirstChild("hue")
 								local sat = color_picker:FindFirstChild("sat")
@@ -1600,26 +1683,31 @@ function library.new()
 						selected_color.ImageColor3 = color
 					end
 					
-					insert(tab, cp_button)
+					insert(subtab, cp_button)
 					return colorpicker_data, cp_button
 				end
-				
-			end
-			
-			return stab_data
-		end
-		
-		return tab_data
-	end
 
-	main.Visible = false
-	function ui_data:launch()
-		for i = #s_stack, 1, -1 do
-			s_stack[i]()
-		end
-		main.Visible = true
-	end
-	return ui_data
+			end
+
+            return stab_data
+        end
+
+        tab_button.MouseButton1Click:Connect(function()
+			tab_data:Show()
+		end)
+
+        return tab_data
+    end
+
+    main.Visible = false
+    function ui_data:Launch()
+        for i = #s_stack, 1, -1 do
+            s_stack[i]()
+        end
+        main.Visible = true
+    end
+
+    return ui_data
 end
 
 return library
