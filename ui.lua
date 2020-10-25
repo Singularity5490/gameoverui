@@ -1134,7 +1134,7 @@ local function create_hover_event(object)
 	end)
 end
 
-function library.new()
+function library.new(columns)
     local ui_data = {}
 
     local checks = {
@@ -1148,7 +1148,8 @@ function library.new()
     local main = new("main")
 	main.Parent = gameover
 	main.Draggable = true
-    main.Position = UDim2.new(0.5, -(main.AbsoluteSize.X / 2), 0.5, -(main.AbsoluteSize.Y / 2))
+	main.Position = UDim2.new(0.5, -(main.AbsoluteSize.X / 2), 0.5, -(main.AbsoluteSize.Y / 2))
+	main.Size = UDim2.new(0, 250 + (columns * 160))
 
     local barup = main:FindFirstChild("barup")
 	local stabholder = main:FindFirstChild("stabholder")
