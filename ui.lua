@@ -1149,7 +1149,7 @@ function library.new(columns)
 	main.Parent = gameover
 	main.Draggable = true
 	main.Position = UDim2.new(0.5, -(main.AbsoluteSize.X / 2), 0.5, -(main.AbsoluteSize.Y / 2))
-	main.Size = UDim2.new(0, 250 + (columns * 160))
+	main.Size = UDim2.new(0, 250 + (columns * 160), 0, 560)
 
     local barup = main:FindFirstChild("barup")
 	local stabholder = main:FindFirstChild("stabholder")
