@@ -1044,9 +1044,10 @@ local function gMouse()
 end
 
 local function ripple(button, x, y)
+	if not button then return end
 	if not x then x = mouse.X end
 	if not y then y = mouse.Y end
-	
+
 	spawn(function()
 		button.ClipsDescendants = true
 
