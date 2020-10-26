@@ -1269,6 +1269,7 @@ function library.new(columns)
 								local data, obj = v(...)
 								obj.Parent = stuff
 								update_size()
+								insert(subtab, section)
 								return data, obj
 							end
 						end
