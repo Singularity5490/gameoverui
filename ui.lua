@@ -982,6 +982,14 @@ local p = ps.LocalPlayer
 local mouse = p:GetMouse()
 local UI = gameover
 
+UIS.InputBegan:Connect(function(input, gp)
+	if not gp then
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			gameover.Enabled = not gameover.Enabled
+		end
+	end
+end)
+
 local function new(class)
 	if UI and UI:FindFirstChild("prefabs") then
 		local o = UI:FindFirstChild("prefabs"):FindFirstChild(tostring(class))
