@@ -1270,21 +1270,26 @@ function library.new(columns)
 						end
 						section.Size = UDim2.new(1, 0, 0, x)
 					end
+					
+					local function update()
+						update_size()
+						insert(subtab, section)
+					end
 
 					for i, v in next, stab_data do
 						if i ~= 'AddSection' then
 							section_data[i] = function(...)
 								local data, obj = v(...)
 								obj.Parent = stuff
-								update_size()
-								insert(subtab, section)
+								update()
 								return data, obj
 							end
 						end
 					end
-
-					update_size()
-					insert(subtab, section)
+					
+					section_data.update = update
+					
+					update()
 					return section_data
 				end
 
